@@ -28,6 +28,7 @@ before_script:
 
 script:
   - make qa
+  - make brand
 
 matrix:
   include:

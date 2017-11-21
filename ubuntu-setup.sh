@@ -7,6 +7,8 @@ docker-compose -v
 nvm install 7
 nvm use
 npm install –g yarn
+npm set registry https://registry.npmjs.org/
+npm config set proxy http://ptmproxy.gmv.es
 pushd recipes-api
 yarn install
 popd
@@ -17,4 +19,5 @@ pushd recipes-id-generator
 yarn install
 popd
 pushd recipes-infra
+yarn install
 popd
